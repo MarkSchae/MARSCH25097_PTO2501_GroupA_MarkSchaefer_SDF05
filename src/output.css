@@ -13,6 +13,7 @@
     --spacing: 0.25rem;
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
+    --font-weight-bold: 700;
     --radius-xl: 0.75rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -203,8 +204,8 @@
   .justify-center {
     justify-content: center;
   }
-  .gap-\[15rem\] {
-    gap: 15rem;
+  .gap-\[8rem\] {
+    gap: 8rem;
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
@@ -287,6 +288,29 @@
   &:focus {
     color: var(--color-blue-300);
   }
+}
+.grid-underline::after {
+  content: "";
+  position: absolute;
+  bottom: calc(var(--spacing) * 0);
+  left: 5rem;
+  height: 0.2rem;
+  width: 100%;
+  background-color: #d66c46;
+}
+.grid-codespace-title::before {
+  content: "CODESP/_CE";
+  position: absolute;
+  bottom: -5rem;
+  left: 5rem;
+  display: block;
+  font-size: 2rem;
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+  background: linear-gradient(to right, white 0%, white 65%, orange 70%, orange 70%, white 85%, white 100%);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -1px -1px 2px rgba(255, 255, 255, 0.4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -373,6 +397,10 @@
   inherits: false;
   initial-value: 0;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -394,6 +422,7 @@
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
+      --tw-font-weight: initial;
     }
   }
 }
