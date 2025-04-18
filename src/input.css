@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+.section-layout {
+    @apply flex flex-col gap-[2rem];
+}
+
+.nav-layout {
+    @apply flex flex-col gap-[0.5rem];
+}
+
+.form-layout {
+    @apply text-base p-[15px] rounded-[10px] border-black border-[0.1rem] 
+        shadow-[2px_2px_5px_rgba(0,0,0,0.3),_-1px_-1px_2px_rgba(255,255,255,0.4)];
+  }
+
+.hover-effect-inputs {
+    @apply hover:shadow-[4px_4px_10px_rgba(0,0,0,0.3),_-2px_-2px_5px_rgba(255,255,255,0.6)] 
+        hover:scale-[1.05] hover:-translate-y-[5px];
+}
+
+.custom-links {
+    @apply text-inherit no-underline font-[inherit] self-start 
+        hover:text-blue-300 focus:text-blue-300;
+}
