@@ -13,9 +13,9 @@
     <!-- The footer section must stay at the bottom of the page -->
     <!-- Footer grid for the footer content -->
     <footer class="w-[100%] flex flex-row justify-center bg-[#659f8f] rounded-xl p-[10rem]">
-        <div class="grid grid-cols-[repeat(3,_minmax(200px,_auto))] grid-rows-[repeat(1,_minmax(auto,_auto))] gap-[8rem] p-[5rem] relative bg-[#659f8f] grid-underline grid-codespace-title">
+        <div class="grid-layout grid-underline grid-codespace-title">
             <!-- Subcribe to the mailing list, prevent form default and use js to complete the submission to avoid a page reload -->
-            <div class="section-layout pr-[5rem]">
+            <div class="section-layout lg:pr-[5rem] md:col-span-2 lg:col-span-1">
                 <h2>Subscribe to our newsletter for updates</h2>
                 <form id="signup-form-id">
                     <input type="email" placeholder="Email Address" required class="form-layout bg-amber-50 hover-effect-inputs">
@@ -23,7 +23,7 @@
                 </form>
             </div>
             <!-- Navigation to the different sections on the page -->
-            <div class="section-layout pl-[5rem]">
+            <div class="section-layout lg:pl-[5rem]">
                 <h4>Quick Link</h4>
                 <nav class="nav-layout">
                     <a href="#home" class="custom-links"><p>Home</p></a>
