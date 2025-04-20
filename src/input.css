@@ -3,15 +3,15 @@
 @import "tailwindcss";
 /* Repeated code for Aligning each div child in the grid */
 .flexbox-section-layout {
-    @apply flex flex-col gap-[2rem];
+    @apply flex flex-col gap-5;
 }
 /* Repeated code for Aligning the nav elements */
 .nav-layout {
     @apply flex flex-col gap-[0.5rem];
 }
 /* Repeated code for Styling the form input and button */
-.form-layout {
-    @apply text-base p-1 w-[40%] rounded-[10px] border-black border-[0.1rem] 
+.form-button-input-layout {
+    @apply text-base p-1 w-full md:w-[40%] rounded-[10px] border-black border-[0.1rem] 
         shadow-[2px_2px_5px_rgba(0,0,0,0.3),_-1px_-1px_2px_rgba(255,255,255,0.4)];
   }
 /* Repeated code for Interactivity for the form input field and button */
@@ -28,12 +28,12 @@
 /* This code is not repeated but it is much cleaner in a custom class and these elements will not really need to be touched again */
 .after-speudo-element-grid-underline::after {
     content: "";
-    @apply absolute bottom-0 lg:left-[2rem] w-[90%] h-[0.2rem] bg-[#d66c46];
+    @apply absolute bottom-0 left-5 md:left-[2rem] w-full h-[0.2rem] bg-[#d66c46];
 }
 
 .before-speudo-element-grid-codespace-title::before {
     content: "CODESP/_CE";
-    @apply absolute bottom-[-5rem] lg:left-[2rem] text-[2rem] font-bold block;
+    @apply absolute bottom-[-5rem] left-5 md:left-[2rem] text-[2rem] font-bold block mb-5;
     background: linear-gradient(to right, 
         white 0%, white 65%, 
         orange 70%, orange 70%, 

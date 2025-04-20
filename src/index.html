@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="h-[100%] m-0 flex flex-col">
+<html lang="en" class="h-full m-0 flex flex-col overflow-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/output.css">
     <title>CodeSpace</title>
 </head>
-<body class="h-full m-0 flex flex-col">
+<body class="h-full m-0 flex flex-col overflow-hidden">
     <header></header>
 
     <main class="flex-1"></main>
@@ -14,21 +14,21 @@
     <!-- Footer grid for the footer content -->
     <footer class="w-full flex flex-row justify-center bg-[#659f8f] rounded-xl py-[5rem] px-0.5">
         <!-- Tailwind is mobile first, create the media querry for the mobile then up in screen size -->
-        <div class="flex flex-col items-start m-0 relative bg-[#659f8f] gap-[1rem] p-[0.5rem]
+        <div class="flex flex-col items-start m-0 relative bg-[#659f8f] gap-[1rem] p-5
                     md:grid md:grid-cols-[repeat(2,_minmax(200px,_auto))] md:grid-rows-[repeat(2,_minmax(20px,_auto))] md:gap-[4rem] md:p-[2rem]
                     lg:grid lg:grid-cols-[repeat(3,_minmax(200px,_auto))] lg:grid-rows-1 lg:gap-[8rem] lg:py-[3rem]
                     after-speudo-element-grid-underline before-speudo-element-grid-codespace-title">
             <!-- Subcribe to the mailing list, prevent form default and use js to complete the submission to avoid a page reload -->
             <div class="flexbox-section-layout md:col-span-2 lg:col-span-1">
-                <h2>Subscribe to our newsletter for updates</h2>
+                <h2 class="font-bold text-2xl">Subscribe to our newsletter for updates</h2>
                 <form id="signup-form-id" class="w-full">
-                    <input type="email" placeholder="Email Address" required class="form-layout bg-amber-50 hover-effect-inputs">
-                    <button type="submit" class="form-layout bg-[#d66c46] text-amber-50 hover-effect-inputs mt-1">Subscribe</button>
+                    <input type="email" placeholder="Email Address" required class="form-button-input-layout bg-amber-50 hover-effect-inputs">
+                    <button type="submit" class="form-button-input-layout bg-[#d66c46] text-amber-50 hover-effect-inputs mt-1">Subscribe</button>
                 </form>
             </div>
             <!-- Navigation to the different sections on the page -->
             <div class="flexbox-section-layout lg:pl-[5rem]">
-                <h4>Quick Link</h4>
+                <h4 class="font-bold">Quick Link</h4>
                 <nav class="nav-layout">
                     <a href="#home" class="custom-links"><p>Home</p></a>
                     <a href="#who-are-we" class="custom-links"><p>Who Are We</p></a>
@@ -36,8 +36,8 @@
                 </nav>
             </div>
             <!-- Navigation to the different technologies on the page -->
-            <div class="flexbox-section-layout ">
-                <h4>Technologies</h4>
+            <div class="flexbox-section-layout">
+                <h4 class="font-bold">Technologies</h4>
                 <nav class="nav-layout">
                     <a href="#html" class="custom-links"><p>HTML</p></a>
                     <a href="#css" class="custom-links"><p>CSS</p></a>
